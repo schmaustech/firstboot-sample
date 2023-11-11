@@ -20,7 +20,7 @@ After=network.target
 ConditionPathExists=!/var/tmp/firstboot-script-complete
 
 [Service]
-ExecStartPre=/usr/bin/sleep 20
+ExecStartPre=/usr/bin/sleep 60
 ExecStart=/usr/bin/bash /var/tmp/firstboot-script.sh
 ExecStartPost=/usr/bin/touch /var/tmp/firstboot-script-complete
 User=root
